@@ -1,0 +1,295 @@
+.logo{
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #C24914;
+    margin: 0px 0px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #ff5601;
+}
+
+.navMenu{ 
+    color:white;
+    text-decoration: none;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 25px;
+    display: inline;
+    margin: 0 20px;
+}
+
+.navMenu:hover{ 
+    color:#FC8621
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+.moveis{
+    height: 400px;
+    width: 100%;
+    margin-top: 120px;
+    padding-top: 30px;
+}
+
+.produtos{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px 80px 0px;
+    flex-basis:10px;
+}
+
+
+.produto1{
+    width: 300px;
+    height: 400px;
+    border: 3px solid #682C0E
+}
+
+.produto2{
+    width: 300px;
+    height: 400px;
+    border: 3px solid #682C0E;
+}
+
+.produto3{
+    width: 300px;
+    height: 400px;
+    border: 3px solid #682C0E
+}
+
+
+
+.h2Moveis{
+    margin-left: 80px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #EBA83A;
+    width: 43%;
+    height: 50px;
+    color: #682C0E;
+    padding-top: 25px;
+    padding-left: 25px;
+    border-radius: 5px;
+    font-weight: 200px;
+    size: 50px;
+}
+
+.produtoMoveis{
+    height: 150px;
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 55px;
+}
+
+.preco{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.comprar-button{
+    height: 40px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: rgb(192, 57, 17);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.comprar-button:hover{
+    background-color: green;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+.home{
+    height: 400px;
+    width: 100%;
+    padding-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+
+.areaPromocao{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    position: relative;
+    margin-top: 110px;
+    text-align: center;
+}
+
+.imageHome{
+    height: 400px;
+    width: 600px;
+    border-radius: 8px;
+    margin-left: 0px;
+    margin-top: 60px;
+    position: relative;
+}
+
+
+.blackFriday{
+    margin-left: 100px;
+}
+
+.black{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+    margin: 0px;
+    padding-bottom: 0px;
+    color: #FC8621;
+}
+
+#friday{
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: 50px;
+    font-size: 70px;
+    margin: 0px;
+    padding-top: 0px;
+    color: #682C0E;
+}
+
+.h2Home{ /*area do desconto*/
+    color: #EBA83A;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 100px;
+    border: 2px solid #EBA83A;
+
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+body{
+    background-color: #F9E0AE;
+    margin:0px 0px 60px;
+}
+
+.main{
+    height: 1300px;
+    width: 100%;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+
+
+.footer{
+    background-color: #682C0E;
+    height: 150px;
+    width: 70%;
+    margin: 90px auto 70px;
+    flex-wrap: wrap;
+    border: 2px solid #FC8621;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+p{  /*ok*/
+    color: #ffffff;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+
+.input{ /*ok*/
+    height: 30px;
+    width: 500px;
+}
+
+.cadastro-button{ /*ok*/
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-color: #FC8621;
+    color: white;
+    border-radius: 5px;
+}
+
+.cadastro-button:hover{
+    background-color: #EBA83A;
+}
+
+.logoFooter{ /*ok*/
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 70px;
+    width: 70px;
+}
+
+.inputRodape{
+    position: relative;
+    margin-left: 150px;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+
+.gitHub{
+    text-decoration: none;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 25px;
+    color: #EBA83A;
+    margin-top: 0px;
+    margin-left: 550px;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 800px){
+    .main{
+        height: 2100px;
+        justify-content:center;
+    }
+    .imageHome{
+        display: none; 
+    }
+    .areaPromocao{
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .moveis{
+        justify-content: space-between;
+        flex-basis: 100px;
+    }
+    .input{
+        width: 50%;
+    }
+
+    .cadastro-button{
+        width:50%;
+    }
+
+    .footer{ 
+        width:70%;
+    }
+
+    
+
+}
