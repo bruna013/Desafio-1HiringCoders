@@ -1,3 +1,21 @@
+/*-------------------------------------------------------------------------------------*/
+
+body{
+    background-color: #F9E0AE;
+    margin:0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.main{
+    height: 1300px;
+    width: 100%;
+    margin-top: 103px;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
 .logo{
     height: 50px;
     width: 50px;
@@ -12,18 +30,20 @@
     background-color: #C24914;
     margin: 0px 0px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     position: absolute;
-    flex-wrap: wrap;
     border-bottom: 3px solid #ff5601;
 }
+
 
 .navMenu{ 
     color:white;
     text-decoration: none;
     font-family: 'Encode Sans SC', sans-serif;
     font-size: 25px;
-    display: inline;
+    display: flex;
+    flex-direction: row;
     margin: 0 20px;
 }
 
@@ -46,7 +66,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 70px 80px 0px;
-    flex-basis:10px;
 }
 
 
@@ -85,14 +104,24 @@
 }
 
 .produtoMoveis{
-    height: 150px;
-    width: 150px;
-    margin-left: 75px;
-    margin-top: 55px;
+    height: 250px;
+    width: 250px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+#cama{
+    margin-left: 30px;
+}
+
+#mesa{
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 240px
 }
 
 .preco{
-    margin-top: 50px;
+    margin-top: 0px;
     text-align: center;
 }
 
@@ -101,7 +130,7 @@
     width: 200px;
     margin-left: 50px;
     margin-top: 10px;
-    background-color: rgb(192, 57, 17);
+    background-color: #682C0E;
     color: white;
     border: none;
     border-radius: 8px;
@@ -117,7 +146,6 @@
 .home{
     height: 400px;
     width: 100%;
-    padding-top: 120px;
     display: flex;
     flex-wrap: wrap;
     flex-direction:column;
@@ -174,17 +202,6 @@
 
 }
 
-/*-------------------------------------------------------------------------------------*/
-
-body{
-    background-color: #F9E0AE;
-    margin:0px 0px 60px;
-}
-
-.main{
-    height: 1300px;
-    width: 100%;
-}
 
 
 /*-------------------------------------------------------------------------------------*/
@@ -194,12 +211,12 @@ body{
     background-color: #682C0E;
     height: 150px;
     width: 70%;
-    margin: 90px auto 70px;
-    flex-wrap: wrap;
+    margin: 0px auto 70px;
     border: 2px solid #FC8621;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -216,7 +233,7 @@ p{  /*ok*/
 
 .input{ /*ok*/
     height: 30px;
-    width: 500px;
+    width: 50%;
 }
 
 .cadastro-button{ /*ok*/
@@ -242,54 +259,158 @@ p{  /*ok*/
 
 .inputRodape{
     position: relative;
-    margin-left: 150px;
+    margin-left: 270px;
+    flex-wrap: nowrap;
 }
 
 /*-------------------------------------------------------------------------------------*/
 
-
+.divGitHub{
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
 .gitHub{
     text-decoration: none;
     font-family: 'Encode Sans SC', sans-serif;
     font-size: 25px;
     color: #EBA83A;
     margin-top: 0px;
-    margin-left: 550px;
 }
 
 
 /*-------------------------------------------------------------------------------------*/
 
+@media (min-width: 1047px){
+    body {
+        width:100%;
+    }
+}
 
-@media (max-width: 800px){
+@media (max-width: 1047px){
     .main{
-        height: 2100px;
+        height: 1900px;
         justify-content:center;
+        display: block;
+    }
+    .navMenu{
+        flex-wrap: nowrap;
+    }
+    .body{
+        height:90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items:center;
+    }
+
+    .header{
+        width: 100%;
+    }
+    #inscricao{
+        width: 140px
     }
     .imageHome{
         display: none; 
     }
     .areaPromocao{
         align-items: center;
-        margin-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: auto auto;
+        text-align: center;
     }
 
     .moveis{
         justify-content: space-between;
         flex-basis: 100px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto 25%;
     }
+
+    .h2Moveis{
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
     .input{
-        width: 50%;
+        width: 80%;
+        margin-left: 0px;
+    }
+
+    .inputRodape{
+        margin-left:0px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .cadastro-button{
         width:50%;
+        margin-top: 20px;
+        margin-left: 0px;
     }
 
     .footer{ 
-        width:70%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width:80%;
+        height: 200px;
+        align-items: center;
+        margin: auto 5% 5% auto;
     }
 
-    
+    .gitHub{
+        margin-left: 0px;
+    }
 
+    .logoFooter{
+        display: none;
+    }
+
+    .textFooter{
+        margin-top: 0px;
+        padding-top:0px;
+    }
+
+    .produto1{
+        margin: 10px;
+    }
+
+    .produto2{
+        margin: 10px;
+    }
+
+    .produto3{
+        margin: 10px;
+    }
+    
+    .blackFriday{
+        margin-left: 0px;
+    }
+
+    .h2Home{
+        margin-left: 0px;
+    }
+
+    .divGitHub{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+
+.popup-container{
+    margin-top: 40px;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(104, 44, 5);
+    color: white;
+    display: none;
 }
